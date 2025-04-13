@@ -107,7 +107,7 @@ a,label {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 img {
@@ -122,7 +122,7 @@ img {
   /* justify-content: center; */
   justify-content: space-between;
   text-align: center;
-  margin: auto;
+  /* margin: auto; */
 }
 
 ul {
@@ -816,6 +816,7 @@ footer p , footer span{
     z-index: 1;
     transform: translateX(100%);
     transition: 0.5s;
+    z-index: 100;
   }
   .menu-overlay{
     display: none;
@@ -826,7 +827,7 @@ footer p , footer span{
     top: 89.2px;
     right: 0;
     left: 0;
-    z-index: 0;
+    z-index: 5;
   }
   .fa-bars{
     display: inline;
@@ -835,20 +836,20 @@ footer p , footer span{
   .navBar li {
     margin: 40px 0;
   }
-  #menu:checked ~ .side-menu {
+  #menu:checked ~ .nav .side-menu {
     display: block;
     transform: translateX(-5%);
   }
   #menu:checked ~ .menu-overlay {
     display: block;
   }
-  #menu:checked ~ .navicons .menu-close {
+  #menu:checked ~ .nav .navicons .menu-close {
     display: inline;
   }
-  #menu:checked ~ .navicons .menu-open {
+  #menu:checked ~ .nav .navicons .menu-open {
     display: none;
   }
-  #menu:checked ~ .side-menu  ul{
+  #menu:checked ~ .nav .side-menu  ul{
     display: block;
   }
 /* ========== End of side menu ============ */

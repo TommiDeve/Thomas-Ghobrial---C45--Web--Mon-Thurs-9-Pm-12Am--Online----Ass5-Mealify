@@ -13,6 +13,10 @@
   <body>
     <input type="checkbox" id="Dark-Mode" />
     <div class="site-container">
+      <input type="checkbox" id="menu" />
+      <div class="menu-overlay"></div>
+
+
       <!------------- Home --------------->
       <div class="Home" id="Home">
         <div class="HomeInner Containers">
@@ -372,9 +376,11 @@
       <!--------- End of Contact --------->
       <!----------- Nav. Bar ------------->
       <div class="nav">
+
         <div class="navBar Containers">
+          
           <h1><a class="logo" href="index.html">Mealify</a></h1>
-          <input type="checkbox" id="menu" />
+          
           <div class="side-menu">
             <ul>
               <li><a class="homeAnc" href="#Home">Home</a></li>
@@ -383,17 +389,16 @@
               <li><a href="#Contact">Contact</a></li>
             </ul>
           </div>
-          <div class="menu-overlay"></div>
           <div class="navicons">
             <label for="Dark-Mode"
-              ><i class="fa-solid fa-moon"></i>
-              <i class="fa-regular fa-sun"></i>
-            </label>
-            <label for="menu" class="menuButton">
-              <i class="fa-solid fa-bars menu-open"></i>
-              <i class="fa-solid fa-xmark menu-close"></i>
-            </label>
-          </div>
+            ><i class="fa-solid fa-moon"></i>
+            <i class="fa-regular fa-sun"></i>
+          </label>
+          <label for="menu" class="menuButton">
+            <i class="fa-solid fa-bars menu-open"></i>
+            <i class="fa-solid fa-xmark menu-close"></i>
+          </label>
+        </div>
         </div>
       </div>
       <!------ End of Nav. Bar ----------->
